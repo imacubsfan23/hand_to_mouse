@@ -1,7 +1,5 @@
 import cv2
-import math
 from Hand import Hand
-
 
 def detect_face(frame, block=False, colour=(0, 0, 0)):
     fill = [1, -1][block]
