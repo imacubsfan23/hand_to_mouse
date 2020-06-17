@@ -15,7 +15,7 @@ def detect_face(frame, block=False, colour=(0, 0, 0)):
     for (x, y, w, h) in faces:
         if w * h > area:
             area = w * h
-            X, Y, W, H = x, y, w, h
+            X, Y, W, H = x, y-50, w, h*3
     cv2.rectangle(frame, (X, Y), (X + W, Y + H), colour, fill)
 
 
